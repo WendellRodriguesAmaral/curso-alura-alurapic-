@@ -1,0 +1,14 @@
+
+<div aria-hidden="true" class="text-center mr-1"> <!-- aria-hidden="true" serve para o leitor de tela ignorar isto ao ler a tela -->
+  <form>
+    <i class="fa fa-search mr-1"></i>
+      <input
+      class="rounded"
+      type="search"
+      placeholder="Search..."
+      autofocus
+      (keyup)="debounce.next($any($event.target).value)"
+      [value]="value"
+       >
+  </form>
+</div>
